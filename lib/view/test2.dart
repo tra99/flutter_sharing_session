@@ -13,10 +13,20 @@ class _Test2State extends State<Test2> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: IconButton(
-          onPressed: () {
-            Navigator.push(context, MaterialPageRoute(builder: (context)=>Test1()));
-          }, icon: Icon(Icons.back_hand_sharp)),
+        child: Column(
+          children: [
+            IconButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Test1()));
+              }, icon: Image.asset("assets/images/chatIcon.jpg")
+            ),
+            IconButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Test1()));
+              }, icon: const Image(image: AssetImage("assets/images/chatIcon.jpg"),height: 100,)
+            ),
+          ],
+        ),
       ),
     );
   }
