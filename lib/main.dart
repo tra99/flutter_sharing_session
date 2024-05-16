@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_app/authentication/login_screen.dart';
 import 'package:widget_app/view/test1.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      home: const Test1(),
+      home: const LoginScreen(),
     );
   }
 }
