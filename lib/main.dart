@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widget_app/authentication/login_screen.dart';
 import 'package:widget_app/view/test1.dart';
+import 'package:widget_app/wigets/list_tile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
 
-      home: const LoginScreen(),
+      home: const MyListTile(),
     );
   }
 }
