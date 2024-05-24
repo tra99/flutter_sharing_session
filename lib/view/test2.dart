@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_app/authentication/login_screen.dart';
 import 'package:widget_app/view/test1.dart';
 
 class Test2 extends StatefulWidget {
@@ -16,15 +17,22 @@ class _Test2State extends State<Test2> {
         child: Column(
           children: [
             IconButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Test1()));
-              }, icon: Image.asset("assets/images/chatIcon.jpg")
-            ),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Test1()));
+                },
+                icon: Image.asset("assets/images/chatIcon.jpg")),
             IconButton(
-              onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>const Test1()));
-              }, icon: const Image(image: AssetImage("assets/images/chatIcon.jpg"),height: 100,)
-            ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const LoginScreen()));
+                },
+                icon: const Image(
+                  image: AssetImage("assets/images/chatIcon.jpg"),
+                  height: 100,
+                )),
           ],
         ),
       ),

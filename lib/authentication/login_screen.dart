@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_app/view/test1.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -63,75 +64,38 @@ class _LoginScreenState extends State<LoginScreen> {
                 width: double.infinity,
                 height: 40,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: (){
+              
+                  }, 
                   style: ElevatedButton.styleFrom(
-                    padding: EdgeInsets.zero,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    textStyle: const TextStyle(fontSize: 18, color: Colors.white),
-                  ).copyWith(
-                    backgroundColor: MaterialStateProperty.resolveWith<Color>((states) {
-                      return Colors.transparent;
-                    }),
+                    backgroundColor: Colors.blue,
+                    
                   ),
-                  child: Ink(
-                    decoration: const BoxDecoration(
-                      gradient: LinearGradient(
-                        colors: <Color>[
-                          Color.fromARGB(255,181, 192, 208),
-                          Color.fromARGB(255,204, 211, 202),
-                          Color.fromARGB(255,245, 232, 221),
-                          Color.fromARGB(255,238, 211, 217),
-                          // Color(0xffca485c),
-                          // Color(0xffe16b5c),
-                          // Color(0xfff39060),
-                          // Color(0xffffb56b),
-                        ],
-                        tileMode: TileMode.mirror,
-                      ),
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                    ),
-                    child: Container(
-                      alignment: Alignment.center,
-                      child: const Text(
-                        'Login',
-                        style: TextStyle(
-                          fontSize: 18,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
-                  ),
+                  child: const Text("Login",style: TextStyle(color: Colors.white,fontWeight: FontWeight.w700),),
                 ),
               ),
             ),
-            const Text("Or Sign Up Using"),
-            const Row(
+            Text("Or Sign Up Using"),
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.facebook,
-                    color: Colors.blue,
-                  ),
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(Icons.facebook,color: Colors.blue,),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.facebook,
-                    color: Colors.blue,
-                  ),
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(Icons.facebook,color: Colors.blue,),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: Icon(
-                    Icons.facebook,
-                    color: Colors.blue,
-                  ),
+                  padding: const EdgeInsets.all(8.0),
+                  child: Icon(Icons.facebook,color: Colors.blue,),
                 ),
+
               ],
+            ),
+            SizedBox(
+              height: 105,
             ),
             const Text("Or Sign Up Using"),
             const Text("SIGN UP")
